@@ -1,0 +1,31 @@
+@charset "EUC-KR";
+
+body{
+	background-color : #68D4E8;
+}
+.header_div {
+	background-color : white;
+	text-align : right;
+	line-height : 100px;
+}
+.header_div > div{
+	display : inline-block;
+	width : 100px;
+	height : 50px;
+	background-color : #76B0E8;
+	margin : 10px;
+	text-align:center;
+	line-height : 50px;
+	box-shadow : 2px 2px 2px black,
+	0 0 25px blue,
+	0 0 5px darkblue;
+}
+.footer_div{
+	text-align : center;
+	height : 100px;
+	background-color : white;
+}
+
+.footer_div > p{
+	padding : 25px;
+}

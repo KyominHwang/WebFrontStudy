@@ -1,0 +1,17 @@
+@charset "EUC-KR";
+.tot_article{
+	width : 1000px;
+	margin : 0 auto;
+}
+
+.div1 > h1{
+	padding-top : 80px;
+}
+
+h1{
+	font-size : 25px;
+}
+.article_div{
+	height : 700px;
+	background-color : white;
+}

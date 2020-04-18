@@ -1,0 +1,25 @@
+@charset "EUC-KR";
+.article_div{
+	text-align : center;
+}
+.article_div > h1{
+	padding : 20px;
+}
+
+.article_div > div{
+	display : inline-block;
+	width : 100px;
+	height : 100px;
+	text-align : center;
+	line-height : 100px;
+	background-color : #76B0E8;
+	box-shadow : 2px 2px 2px black,
+	0 0 25px blue,
+	0 0 5px darkblue;
+	margin : 20px;
+	color : white;
+}
+.article_div{
+	height : 700px;
+	background-color : white;
+}
