@@ -1,0 +1,74 @@
+body{
+    background-color : white;
+}
+header{
+    height : 120px;
+    background-color : #000000;
+}
+
+header > h1{
+    line-height: 120px;
+    padding-left:40px;
+    font-size : 40px;
+    margin : 0 auto;
+    height:120px;
+    width : 1040px;
+    color : #ffffff;
+    background-color : lightskyblue;
+}
+section{
+    padding : 40px;
+    margin : 0 auto;
+    text-align: center;
+    width : 1000px;
+    background-color : lightcyan;
+}
+.nav{
+    width : 1000px;
+}
+.nav > div{
+    margin-left : 0px;
+    line-height:33px;
+    display : inline-block;
+    width:324px;
+    height:33px;
+    background-color : white;
+    font-size: 16px;
+    border : 1px solid;
+}
+
+.content{
+    margin-top : 30px;
+}
+
+.content > table{
+    margin-bottom : 30px;
+}
+.content > table > thead{
+    padding-left:15px;
+    line-height: 46px;
+    display : inline-block;
+    background-color : #f7f7f7;
+    border : 1px #f7f7f7;
+    width : 985px;
+    height : 46px;
+}
+
+.content > table > tbody{
+    text-align : left;
+    height : 72px;
+    line-height : 72px;
+    font-size: 12px;
+    padding-left : 30px;
+    width : 970px;
+    background-color : white;
+}
+
+.content > table > tbody td{
+    padding-left : 30px;
+}
+
+footer{
+    text-align: center;
+}
+
