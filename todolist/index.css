@@ -1,0 +1,22 @@
+.title{
+    background-color: lightcyan;
+    text-align: center;
+}
+
+.js-toDoForm{
+    background-color: antiquewhite;
+    text-align: center;
+    height : 60px;
+    line-height: 60px;
+}
+
+.js-toDoForm input{
+    width : 200px;
+    height : 40px;
+}
+
+ul{
+    text-align: center;
+    list-style: none;
+    background-color: lightcyan;
+}
