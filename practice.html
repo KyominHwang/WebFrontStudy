@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>수강신청</title>
+</head>
+<body>
+    <h1>수강신청</h1>
+    <form>
+        <input type="text" placeholder="이름" class="js-inputName">
+        <input type="button" value="신청" onclick="clickEvent()">
+    </form>
+    <hr>
+    <div class="js-nameList"></div>
+
+    <script>
+        function clickEvent(){
+            const userInput = document.querySelector(".js-inputName");
+            let name = document.createElement("p");
+            let userName = document.createTextNode(userInput.value);
+            name.appendChild(userName);
+
+            const btn = document.createElement("button");
+            btn.innerText = "X";
+            btn.addEventListener("click",function(){
+               this.parentNode.parentNode.removeChild(this.parentNode);
+            });
+            name.appendChild(btn);
+            let nameList = document.querySelector(".js-nameList");
+            nameList.appendChild(name);
+            userInput.value = "";
+        }
+    </script>
+</body>
+</html>
