@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>라면을 끓이는 순서</title>
+</head>
+<body>
+    <header>
+        <h1>라면을 끓이는 순서</h1>
+    </header>
+<hr>
+    <section>
+        <article>
+            <ol type="A" style="background-color:yellowgreen" onclick="addList()">
+                <li>물을 끓인다.</li>
+            </ol>
+        </article>
+    </section>
+<script>
+    let container = document.querySelector("ol");
+    function addList(){
+        let text = prompt("라면을 끓이는 순서를 입력하라.");
+        let tmp = document.createElement("li");
+        tmp.innerHTML = text;
+        container.appendChild(tmp);
+    }
+</script>
+</body>
+</html>

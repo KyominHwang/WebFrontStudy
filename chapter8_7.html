@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DOM객체 동적 할당</title>
+</head>
+<body>
+    <header>
+        <h1>
+            정답의 동적 삽입
+        </h1>
+    </header>
+<hr>
+    <section>
+        <article>
+            Q. 거울아 거울아 세상에서 누가 제일 예쁘니? <br>
+            <button onclick="showFirst()">답보기</button>
+            <div class="js-ans1"></div>
+        </article>
+        <article>
+            Q. 죽느냐 사느냐 어떤 것이 문제인가?<br>
+            <button onclick="showSecond()">답보기</button>
+            <div class="js-ans2"></div>
+        </article>
+    </section>
+<script>
+    function showFirst(){
+        document.querySelector(".js-ans1").innerHTML = "백설공주";
+    }
+    function showSecond() {
+        document.querySelector(".js-ans2").innerHTML = "둘다";
+    }
+</script>
+</body>
+</html>
