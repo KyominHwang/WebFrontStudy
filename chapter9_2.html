@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>라디오 버튼을 클릭하면 이미지를 출력합니다.</title>
+</head>
+<body>
+    <header>
+        <h1>라디오 버튼을 클릭하면 이미지를 출력합니다.</h1>
+    </header>
+<hr>
+    <section>
+        <article>
+            <form onchange="changePic()" class="js-fruits">
+                <input type="radio" name="fruit" value="banana">바나나
+                <input type="radio" name="fruit" value="mango">망고
+                <input type="radio" name="fruit" value="apple" checked>사과
+            </form>
+            <div>
+                <img src = "apple.png" alt="apple" width="200px" height="200px">
+            </div>
+        </article>
+    </section>
+<script>
+    let fruits = document.querySelector(".js-fruits");
+    let image = document.querySelector("img");
+    let found;
+    function changePic(){
+        for(let i = 0 ; i < fruits.length ; i++){
+            if(fruits[i].checked) found = fruits[i];
+        }
+        if(found.value === "banana") image.setAttribute("alt","banana");
+        else if(found.value==="mango") image.setAttribute("alt","mango");
+        else image.setAttribute("alt","apple");
+    }
+</script>
+</body>
+</html>

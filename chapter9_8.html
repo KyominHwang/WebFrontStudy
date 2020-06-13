@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>이벤트 객체의 target</title>
+</head>
+<body>
+    <h3>아이템을 클릭하명 1.3배 크기로</h3>
+<hr>
+    <p>여름방학때 하고 싶은 것들</p>
+<ul>
+    <li>자전거로 대한민국 일주</li>
+    <li>책 100권 읽기</li>
+    <li>철인 3종 경기 준비</li>
+    <li>자바스크립트 정복</li>
+</ul>
+<script>
+    let tags = document.getElementsByTagName("li");
+    for(let i = 0 ; i < tags.length ; i++){
+        tags[i].addEventListener("click",function(){
+            tags[i].style.fontSize = "1.3em";
+            for(let j = 0 ; j < tags.length ; j++){
+                if(i != j) tags[j].style.fontSize = "1em";
+            }
+        });
+    }
+</script>
+</body>
+</html>

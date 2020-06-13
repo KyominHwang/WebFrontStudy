@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>onkeydown</title>
+</head>
+<body>
+    <header>
+        <h1>계산기 만들기</h1>
+    </header>
+<hr>
+    <section>
+        <article>
+            수식을 입력하고 &lt;Enter&gt;를 입력하세요.<br>
+            식 <input type="text" name="expression" onkeypress="if(event.keyCode==13) calc()" class="js-express"><br>
+            값 <input type="text" name="res" class="js-res">
+        </article>
+    </section>
+<script>
+    let expression = document.querySelector(".js-express");
+    let res = document.querySelector(".js-res");
+    function calc(){
+        let tmp = eval(expression.value);
+        expression.value = "";
+        res.value = tmp;
+    }
+</script>
+</body>
+</html>
