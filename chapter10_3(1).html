@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>사이트</title>
+</head>
+<body>
+    <h1>옵션 선택으로 사이트 접속</h1>
+    <p>옵션 선택 마다 새 윈도우 접속합니다.</p>
+<hr>
+    <form>
+        <select id="sites" onchange="showSite()">
+            <option value="naver">네이버</option>
+            <option value="google">구글</option>
+            <option value="oracle">오라클</option>
+        </select>
+    </form>
+<script>
+    let cont = document.querySelector("#sites");
+    function showSite() {
+        let tmp = cont.selectedIndex;
+        if(cont[tmp].value ==="naver") window.open("https://naver.com","");
+        else if(cont[tmp].value ==="google") window.open("https://google.com","");
+        else window.open("https://oracle.com","");
+    }
+</script>
+</body>
+</html>

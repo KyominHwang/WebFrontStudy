@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>setTimeInterval</title>
+</head>
+<body>
+    <h1>div태그에 시계 만들기</h1>
+<hr>
+    <div>
+        <span class="js-clock"></span>
+    </div>
+<script>
+    function getTime() {
+        let today = new Date();
+        let cont = document.querySelector(".js-clock");
+        cont.innerHTML = today.toLocaleString();
+    }
+
+    setInterval(getTime,1000);
+
+</script>
+</body>
+</html>
